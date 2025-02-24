@@ -1,0 +1,41 @@
+label start:
+    scene apartment a living room day
+    "Estábamos encerrados con 3 de mis amigos en mi casa. No sé cómo apareció una bomba con una cuenta regresiva de 10 minutos."
+    "Ya intentamos romper ventanas y puertas, pero parecen de acero, intentemos llamar a la policías, pero no hay señal ni internet…"
+    show bauti at left
+    e "¡Relax gente, esto es una cámara oculta para Showmatch!"
+    hide bauti 
+    show luis at right
+    i "¡No creo que sea una broma! Cuando esa contador llegue a cero..."
+    i "TODOS VAMOS A MORIR."
+    hide luis
+    show bauti at center
+    e "Capaz en 10 minutos va a saltar papelitos de colores, tipo revelación de género."
+    hide bauti
+    show sol at center
+    a "Esto es ridículo... Si va a explotar, que explote ya, ¿Para que nos hace esperar 10 minutos?"
+    hide sol
+    player "Tal vez porque debe haber una manera de detener la bomba antes de que el tiempo acabe."
+    player "¡Espera! Hay algo como un juego de trivia atras de la bomba"
+    show bauti at center
+    e "O sea, what?"
+    show luis at right
+    i "Tal vez si las respondemos, la bomba no explote."
+    hide bauti
+    hide luis
+    show sol at center
+    a "Medio que es una pelotudez, si va a ser un juego mortal que mínimo sea interesante."
+    a "Como una pistola no se."
+    hide sol
+    show bauti at center
+    e "Si lo contestamos bien, capaz nos ganemos 5 lucas, anasheeeee."
+    hide bauti
+
+    menu:
+        "Responder las preguntas":
+            jump pregunta_bomba_1
+        "Buscar otra salida":
+            jump final_malo
+        "No hacer nada":
+            jump final_muy_malo
+
